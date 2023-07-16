@@ -1,6 +1,8 @@
 # Memories Project
 Welcome to the Memories Project! This is a web application where users can create, edit, and delete their own posts to capture and share their cherished memories. The core functionality of the system allows anyone to like and comment on each post displayed.
 
+_Visit_ - https://memos-and-me.netlify.app
+
 ### Sample pages
 <details>
 <summary>Home</summary>
