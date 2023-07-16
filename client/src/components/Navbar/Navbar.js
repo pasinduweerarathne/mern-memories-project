@@ -55,7 +55,6 @@ const Navbar = () => {
               alt={user?.result.name}
               src={user?.result.imageUrl}
             >
-              <p>just for check</p>
               {user?.result.name.charAt(0)}
             </Avatar>
             <Typography className={classes.userName} variant="h6">
