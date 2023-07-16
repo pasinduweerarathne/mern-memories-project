@@ -49,6 +49,8 @@ const SignUp = () => {
     setShowPassword(false);
   };
 
+  console.log(isSignup);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 

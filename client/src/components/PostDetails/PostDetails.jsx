@@ -10,6 +10,7 @@ import { Link, useParams, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import useStyles from "./styles";
 import { getPost, getPostsBySearch } from "../../actions/posts";
+import CommentSection from "./CommentSection";
 
 const PostDetails = () => {
   const classes = useStyles();
@@ -58,8 +59,9 @@ const PostDetails = () => {
             color="textSecondary"
             component="h2"
           >
-            {post.tags.map((tag) => (
+            {post.tags.map((tag, index) => (
               <Link
+                key={index}
                 to={`/tags/${tag}`}
                 style={{ textDecoration: "none", color: "#3f51b5" }}
               >
@@ -87,7 +89,7 @@ const PostDetails = () => {
             <strong>Realtime Chat - coming soon!</strong>
           </Typography>
           <Divider style={{ margin: "20px 0" }} />
-          {/* <CommentSection post={post} /> */}
+          <CommentSection post={post} />
           <Divider style={{ margin: "20px 0" }} />
         </div>
         <div className={classes.imageSection}>
